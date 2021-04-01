@@ -5,7 +5,7 @@ exports.run = async (client, message, member) => {
 
   let uye = message.mentions.users.first() || message.author;
   let bilgi = db.get(`peryusstoplamstat${uye.id}`);
-  let yazı = "❃  Λ T I N A Teyit Listesi;";
+  let yazı = "Top Teyit Listesi | Peryuss";
 
   let top = message.guild.members.cache
     .filter(uye => db.get(`peryusstoplamstat${uye.id}`))
